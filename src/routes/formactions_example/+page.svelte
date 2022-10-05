@@ -22,12 +22,12 @@
 <form
 	action="?/subscribe"
 	method="POST"
-	use:enhance={({ form, data, action, cancel }) => {
-		return async ({ result, update }) => {
+	use:enhance={() => {
+		return async ({ result }) => {
 			if (result.type === 'success') {
 				success = true;
 				// re-run all `load` functions, following the successful update
-				// this does not really apply to this example, but can be used to refresh the UI upon sucessfull authentication
+				// this does not really apply to this example, but can be used to refresh the full UI data upon sucessfull authentication
 				await invalidateAll();
 			}
 			await applyAction(result);
@@ -39,6 +39,7 @@
 	{#if form?.invalid}<p>Invalid email!</p>{/if}
 	<input name="email" type="email" placeholder="your@email" value={form?.email ?? ''} />
 	<button>Subscribe</button>
+	<button formaction="?/register">Register</button>
 </form>
 
 {#if success}

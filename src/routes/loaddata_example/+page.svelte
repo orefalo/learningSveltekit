@@ -10,4 +10,5 @@
 
 <h1>Loaddata Example</h1>
 <p>This example demonstrates how load functions can be evaluated client & server sides</p>
+
 {JSON.stringify(data, null, 2)}

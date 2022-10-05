@@ -6,5 +6,5 @@
 	console.log('layout', data);
 </script>
 
-This is a Layout
+This is the Layout
 <slot />
