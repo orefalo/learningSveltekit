@@ -1,8 +1,35 @@
 # create-svelte
 
-The most basic examples to understand the new concepts in sveltekit
+The most basic examples to understand the new concepts in SvelteKit.
 
-## launching
+## Data Loading
+
+Benefits
+
+* transparent client/server communication
+* clear segregation of ui, client and server side code
+* great encapsulation capabilities
+* clean & consistent api
+
+## Fetch
+
+Benefits
+
+* full featured fetch() function
+* rest api like interactions
+* support for chunked responses
+* clean & simple
+
+## FormActions
+
+Benefits
+
+* clean form state lifecycle mgmt
+* easy client/server code
+* clean no-js degredation
+* consistent and full featured api
+
+# LAUNCHING
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
