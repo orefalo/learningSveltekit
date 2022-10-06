@@ -4,11 +4,12 @@
 
 import type { PageLoad } from './$types';
 
-export const load: PageLoad = async ({ data }) => {
-	//const { user } = await parent();
+export const load: PageLoad = async ({ data, parent }) => {
+	const { user } = await parent();
 	// json data passed back to page.svelte
-	// return { ...data }
+
 	return {
+		user,
 		'page.ts': 'load',
 		...data
 	};

@@ -16,8 +16,9 @@ Benefits
 Benefits
 
 - full featured fetch() function
+- Eases developer work - authorization and xxx are preset
 - rest api like interactions
-- support for chunked responses
+- support for chunked data
 - clean & simple
 
 ## FormActions
@@ -29,6 +30,20 @@ Benefits
 - clean no-js degredation
 - button's formaction attribute simplifies routing
 - consistent and full featured api
+
+## FormActions customize
+
+Benefits
+
+- same as above
+- shows how you can fully customize the interaction
+
+## Routing
+
+Benefits
+
+- UI encapsulation & reuse
+- Grouping of styles
 
 # LAUNCHING
 
