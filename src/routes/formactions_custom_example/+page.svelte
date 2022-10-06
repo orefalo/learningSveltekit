@@ -21,6 +21,7 @@
 		const response = await fetch(this.action, {
 			method: 'POST',
 			headers: {
+				// this is to ensure the POST hits +page.server.js even if there is a server.js overlap
 				'x-sveltekit-action': 'true'
 			},
 			body: data
