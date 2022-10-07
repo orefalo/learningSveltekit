@@ -12,10 +12,10 @@ export const actions: Actions = {
 		const form = await request.formData();
 		const email = form.get('email');
 		if (!email || email.toString().length === 0) {
-			return invalid(400, { email, missing: true });
+			return invalid(400, { missing: true, email });
 		}
 		if (REGEX_EMAIL.test(email.toString()) === false) {
-			return invalid(400, { email, invalid: true });
+			return invalid(400, { invalid: true, email });
 		}
 		console.log(email);
 	},
